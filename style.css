@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(bg1.jpg);
+    box-sizing: border-box;
+}
+.navigation{
+    background-color: green;
+    text-align: center;
+}
+.navigation ul{
+    display: inline-flex;
+    list-style: none;
+}
+.navigation ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.navigation ul li a{
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+#active , .navigation ul li:hover{
+    background-color: rgb(6, 231, 36);
+    border-radius: 3px;
+}
+.nav-two{
+    display: none;
+}
+.first-nav:hover .nav-two{
+    display: block;
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 10px;
+}
+.first-nav:hover .nav-two ul{
+    display: block;
+    background-color: green;
+    border-radius: 8px;
+    padding-bottom: 3px;
+}
+.navigation ul:hover .nav-two ul li{
+    border-bottom: 2px dotted white;
+}
+.navigation ul:hover .nav-two ul li:last-child{
+    border-bottom: none;
+    margin-bottom: 10px;
+}
+.nav-three-section{
+    display: none;
+}
+.nav-three:hover .nav-three-section{
+    display: block;
+}
+.nav-three:hover .nav-three-section ul{
+    display: block;
+    position: absolute;
+    margin-left: 135px;
+    margin-top: -30px;
+}
